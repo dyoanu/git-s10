@@ -17,3 +17,12 @@ Cuando queremos definir una configuracion de manera Gral, debemos utilizar __--g
 para sincronizar los cambios realizados en el proyecto, debemos tener en cuenta que si creamos en nuestra compu el mismo utilizando el comando __git init__, vamos a tener que crearlo tambien en nuestro servidor remoto, como por ejemplo [Github](https://github.com). 
 
 En caso que ya exista un repositorio remoto, simplemente debemos descargar el historial de cambios del mismo, pero indistintamente de como hayamos empezado, lo principal es estar pendiente de los cambios realizados en el servidor de GIT.
+
+## Acceso por primera vez
+* __git clone `romete` `folder`__: Crea una carpeta en donde se descargara el contenido del repositorio.
+* __cd `folder`__: Abre la carpeta creada utlizando el comando git clone.
+
+## Sincronizacion de cambios
+* __git fetch `remote`__: Descarga el historial de cambios del repositorio.
+* __git pull `remote` `branch`__: Descarga los cambios y los integra a la rama actual.
+* __git push `remote` `branch`__: Envia los cambios locales al repositorio remoto.
