@@ -18,11 +18,17 @@ para sincronizar los cambios realizados en el proyecto, debemos tener en cuenta 
 
 En caso que ya exista un repositorio remoto, simplemente debemos descargar el historial de cambios del mismo, pero indistintamente de como hayamos empezado, lo principal es estar pendiente de los cambios realizados en el servidor de GIT.
 
-## Acceso por primera vez
+### Acceso por primera vez
+
+Cuando clonamos un repositorio remoto debemos tener en cuenta que no exista en la ruta actual ninguna carpeta con el mismo nombre que dicho repositorio, o cualquier nombre que querramos ponerle. Esto se debe a que GIT por cuestiones de seguridad, evitara sobreescribir archivos existentes. Si realizamos esta tarea con exito, se agregara una direccion remota con el nombre __origin__.
+
 * __git clone `romete` `folder`__: Crea una carpeta en donde se descargara el contenido del repositorio.
 * __cd `folder`__: Abre la carpeta creada utlizando el comando git clone.
 
-## Sincronizacion de cambios
+### Sincronizacion de cambios
+
+Una vez clonado un proyecto, debemos tener en cuenta que sus cambios no se sincronizan automaticamente, si no que debemos enviar y descargar los mismos periodicamente; ya que de lo contrario estariamos trabajando en un proyecto que se encuentra desactualizado, y si bien podemos seguir integrando dichos cambios, se dificultaria esta tarea.
+
 * __git fetch `remote`__: Descarga el historial de cambios del repositorio.
 * __git pull `remote` `branch`__: Descarga los cambios y los integra a la rama actual.
 * __git push `remote` `branch`__: Envia los cambios locales al repositorio remoto.
