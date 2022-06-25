@@ -1,16 +1,34 @@
 /* Content First _ MObile First */
-    @import url('https://googleapis.com/css2?family=Raleway')
+    @import url('https://fonts.googleapis.com/css2?family=Raleway')
     /* Reglas Generales */
-    
+    *{
+        box-sizing: border-box;
+        font-family: 'Raleway', Calibri, segoe UI, sans-serif;
+
+    }
        
     
         /* Margenes */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        header p{
+            margin: 0;
+        }
 
         /* Bordes */
+        iframe{
+            border: none;
+        }
 
         /* Rellenos */
 
         /* Estilos */
+        #footer a{
+            text-decoration: none;
+        }
 
     /* Navegacion */
 
